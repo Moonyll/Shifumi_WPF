@@ -1,0 +1,15 @@
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi.csprojAssemblyReference.cache
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\MainWindow.g.cs
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\App.g.cs
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi_MarkupCompile.cache
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi_MarkupCompile.lref
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\bin\Debug\Shifumi.exe.config
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\bin\Debug\Shifumi.exe
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\bin\Debug\Shifumi.pdb
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\MainWindow.baml
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi.g.resources
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi.Properties.Resources.resources
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi.csproj.GenerateResource.cache
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi.exe
+C:\Users\Dell\Documents\Exos\WPF\Shifumi\Shifumi\Shifumi\obj\Debug\Shifumi.pdb
