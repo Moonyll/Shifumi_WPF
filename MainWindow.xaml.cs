@@ -23,12 +23,12 @@ namespace Shifumi
     {
         // Déclaration des variables
         int index;
+        double a;
         string[] shifumi = new string[] { "Pierre", "Feuille", "Ciseaux" }; // Tableau Pierre Feuille Ciseaux
-        int wins, loss, deuce, games = 0; // Victoires, égalités, jeux
+        double wins, loss, deuce, games = 0; // Victoires, égalités, jeux
         public MainWindow()
         {
         InitializeComponent();
-
         }
         private void Choice(object sender, RoutedEventArgs e)
         {
@@ -38,7 +38,7 @@ namespace Shifumi
         string choix = $"{button_choice.Content}";
         index = Array.IndexOf(shifumi, choix);
 
-        joueur.Text= $"{"Le Joueur a choisi : "}{choix} {index}";
+        joueur.Text= $"{"Le Joueur a choisi : "}{choix}";
         
         }
         private void Play(object sender, RoutedEventArgs e)
@@ -47,27 +47,37 @@ namespace Shifumi
         int random_choice = random_number.Next(0, 3);
         var combine = index.ToString() + random_choice.ToString();
         int new_index = index;
+            if (games != 0)
+            {
+                a = Math.Round((wins / games)*100,2);
+            }
 
             Button button_play = (Button)sender;
-
-        ordinateur.Text = $"{"L'ordinateur a choisi : "}{shifumi[random_choice]}";
+        
+            ordinateur.Text = $"{"L'ordinateur a choisi : "}{shifumi[random_choice]}";
             if (combine == "02" || combine == "10" || combine == "21")
             {
-            wins++;
-            games++;
-            resultat.Text = $"{shifumi[new_index]}{" Versus "}{shifumi[random_choice]}{" Joueur Gagne "}{" Victoires : "}{wins}{ " Défaites : "}{loss}{ " Egalités : "}{deuce}";
+                wins++;
+                games++;
+                // Résultats   
+                resultat.Text = $"{shifumi[new_index]}{" Versus "}{shifumi[random_choice]}{"\n"}{" Gagné ! "}{"\n"}{" Victoires : "}{wins}{"\n"}{ " Défaites : "}{loss}{"\n"}{ " Egalités : "}{deuce}{"\n"}{" Nb Jeux : "}{games}";
+                pourcentage.Text = $"{"Pourcentage de victoire : "}{a}{" %"}";
             }
             else if (combine == "20" || combine == "01" || combine == "12")
             {
-            loss++;
-            games++;
-            resultat.Text = $"{shifumi[new_index]}{" Versus "}{shifumi[random_choice]}{" Joueur Perd "}{"Victoires : "}{wins}{ " Défaites : "}{loss}{ " Egalités : "}{deuce}";
+                loss++;
+                games++;
+                // Résultats    
+                resultat.Text = $"{shifumi[new_index]}{" Versus "}{shifumi[random_choice]}{"\n"}{" Perdu... "}{"\n"}{"Victoires : "}{wins}{"\n"}{ " Défaites : "}{loss}{"\n"}{ " Egalités : "}{deuce}{"\n"}{" Nb Jeux : "}{games}";
+                pourcentage.Text = $"{"Pourcentage de victoire : "}{a}{" %"}";
             }
             else
             {
-            deuce++;
-            games++;
-            resultat.Text = $"{shifumi[new_index]}{" Versus "}{shifumi[random_choice]}{" Egalité "}{" Victoires : "}{wins}{ " Défaites : "}{loss}{ " Egalités : "}{deuce}";
+                deuce++;
+                games++;
+                // Résultats     
+                resultat.Text = $"{shifumi[new_index]}{" Versus "}{shifumi[random_choice]}{"\n"}{" Egalité... "}{"\n"}{" Victoires : "}{wins}{"\n"}{ " Défaites : "}{loss}{"\n"}{ " Egalités : "}{deuce}{"\n"}{" Nb Jeux : "}{games}";
+                pourcentage.Text = $"{"Pourcentage de victoire : "}{a}{" %"}";
             }
         }
     }

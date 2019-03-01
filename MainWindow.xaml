@@ -25,9 +25,10 @@
         <Button Content="Ciseaux" Margin="2" Grid.Column="2" Grid.Row="0" FontWeight="bold" FontSize="30" Background="#33ccff" Click="Choice"/>
         <Button Content="Jouer" Margin="2" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" FontWeight="bold" FontSize="30" Background="#999966" Click="Play"/>
         <!--Affichage des résultats-->
-        <TextBlock Name="joueur" Margin="2" Grid.Column="3" Grid.Row="0" TextWrapping="Wrap" Background="#6699ff"></TextBlock>
-        <TextBlock Name="ordinateur" Margin="2" Grid.Column="3" Grid.Row="1" TextWrapping="Wrap" Background="#00ffff"></TextBlock>
-        <TextBlock Name="resultat" Margin="2" Grid.Column="4" Grid.Row="0" Grid.RowSpan="2" TextWrapping="Wrap"></TextBlock>
+        <TextBlock Name="joueur" Margin="2" Grid.Column="3" Grid.Row="0" FontWeight="bold" FontSize="20" TextWrapping="Wrap" Background="#6699ff"></TextBlock>
+        <TextBlock Name="ordinateur" Margin="2" Grid.Column="3" Grid.Row="1" FontWeight="bold" FontSize="20" TextWrapping="Wrap" Background="#00ffff"></TextBlock>
+        <TextBlock Name="resultat" Margin="2" Grid.Column="4" Grid.Row="0" FontWeight="bold" FontSize="20" TextWrapping="Wrap" Background="#99ccff"></TextBlock>
+        <TextBlock Name="pourcentage" Margin="2" Grid.Column="4" Grid.Row="1" FontWeight="bold" FontSize="20" TextWrapping="Wrap" Background="#99ff66"></TextBlock>
     </Grid>
     
 </Window>
